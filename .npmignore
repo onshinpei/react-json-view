@@ -1,6 +1,6 @@
 *.swp
 npm-debug.log
-
+/.vscode
 /.git
 /.nyc_output
 /coverage

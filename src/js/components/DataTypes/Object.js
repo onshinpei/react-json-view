@@ -1,5 +1,5 @@
 import React from 'react';
-import {polyfill} from 'react-lifecycles-compat';
+import { polyfill } from 'react-lifecycles-compat';
 import { toType } from './../../helpers/util';
 
 //data type components
@@ -154,13 +154,14 @@ class RjvObject extends React.PureComponent {
                     }}
                     {...Theme(theme, 'brace-row')}
                 >
+
+                    <ObjectName {...this.props} />
                     <div
                         class="icon-container"
                         {...Theme(theme, 'icon-container')}
                     >
                         <IconComponent {...{ theme, iconStyle }} />
                     </div>
-                    <ObjectName {...this.props} />
                     <span {...Theme(theme, 'brace')}>
                         {object_type === 'array' ? '[' : '{'}
                     </span>
